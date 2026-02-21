@@ -1,3 +1,8 @@
 # DailyLOG
 ## 21st Feb 2026
-I am starting with fast API , I am gonna step into advanced backend and AI , so to take the first step i am starting with FastAPI.
+
+## Goal
+Starting FastAPI to build foundation for advanced backend and AI work.
+
+## What I Did Today
+- Set up GitHub repo for daily logging
