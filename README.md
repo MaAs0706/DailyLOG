@@ -1,26 +1,32 @@
 # DailyLOG
-</br>
+
+A daily log of my learning journey — tracking goals, concepts, and hands-on experiments as I build toward advanced backend and AI development.
+
+---
 
 ## 21st Feb 2026
 
-## Goal
-Starting FastAPI to build foundation for advanced backend and AI work.
+### Goal
+Start FastAPI to build a foundation for advanced backend and AI work.
 
-## What I Did Today
-- Set up GitHub repo for daily logging
+### What I Did Today
+- Set up this GitHub repo for daily logging
+- Chose FastAPI as the starting point for backend development
 
-
-</br>
+---
 
 ## 22nd Feb 2026
 
-## Goal 
-Learning ALong the documentation of FastAPI and freecodecamp course of FastAPI
+### Goal
+Learn FastAPI fundamentals through the official documentation and a freeCodeCamp course.
 
-## What I am learning today 
+### What I Learned Today
+
+#### Basic Endpoint Creation
 
 ```python
 from fastapi import FastAPI
+
 app = FastAPI()
 
 @app.get("/")
@@ -28,25 +34,20 @@ def read_root():
     return {"Hello": "World"}
 
 @app.get("/items/{item_id}")
-def read_item(item_id: int , q : str| None = None):
-    return {"item_id": item_id,"q":q}
-
+def read_item(item_id: int, q: str | None = None):
+    return {"item_id": item_id, "q": q}
 ```
 
-This is a basic endpoint creation , First we import FastAPI and then create an app .
-Then we can see that there are two endpoints.
+We import `FastAPI`, create an `app` instance, and define two endpoints:
 
-The first endpoint (@app.get("/")) responds to the root URL and 
-returns a simple JSON message. Which in this case is Hello World
+- `GET /` — responds to the root URL and returns a simple JSON message.
+- `GET /items/{item_id}` — takes an `item_id` from the URL path (must be an integer) and an optional query parameter `q`, then returns both in the response.
 
-The second endpoint (@app.get("/items/{item_id}")) takes an item_id 
-from the URL path (must be an integer) and an optional query 
-parameter q, then returns both in the response.
+---
 
-
+#### Pydantic & the PUT Method
 
 ```python
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -63,31 +64,24 @@ def read_root():
     return {"Hello": "World"}
 
 @app.get("/items/{item_id}")
-def read_item(item_id: int, q : str| None = None):
-    return {"item_id": item_id,"q":q}
+def read_item(item_id: int, q: str | None = None):
+    return {"item_id": item_id, "q": q}
 
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item):
-    return {"item_name": item.name,"item_id": item_id}
-
+    return {"item_name": item.name, "item_id": item_id}
 ```
 
-- In this step we made put method which is used for updating already existing data . We imported pydantic . WHat pydantic actually does is that it checks if the right type of data is going into the the given place , for eg if i set the type of variable x to be int , andI try to give a string for x then pydantic will give an error . This helps us in making sure that the data is correct . 
+The `PUT` method is used to update existing data. We use **Pydantic** to define the shape and types of that data via a `BaseModel` class.
 
-<br>
+Think of Pydantic as a bouncer at a club , you define what valid data looks like, and Pydantic checks every request at the door:
 
-- Pydantic is like a bouncer at a club. <br>
-You create a BaseModel class that says "here's what valid data looks like" — for example, an Item must have a name (text), a price (number), etc.
-When someone sends data to your API, Pydantic checks it at the door:
+- Data matches your rules → it passes through to your function.
+- Data is wrong (e.g. `price` is a string instead of a number) → it's rejected with a clear error message before your function even runs.
 
-<br>
+### What I Tried & Tested
+- Visited `http://localhost:8000/docs` and explored the auto-generated interactive API docs
+- Tested the `PUT` endpoint using the Swagger UI
+- Deliberately sent wrong data types to trigger Pydantic validation errors
 
- - If the data matches your rules → let it through to your function <br>
- If the data is wrong (price is text instead of a number) → reject it with a clear error message, your function never even runs
- 
-<br>
-
-## What I tried/tested
-- Visited http://localhost:8000/docs and saw the auto-generated API documentation
-- Tested the PUT endpoint using the interactive docs
-- Tried sending wrong data types to see Pydantic validation errors
+---
