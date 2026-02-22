@@ -32,4 +32,9 @@ def read_item(item_id: int , q : str| None = None):
 This is a basic endpoint creation , First we import FastAPI and then create an app .
 Then we can see that there are two endpoints.
 
-THe frist endpoint whne you 
+The first endpoint (@app.get("/")) responds to the root URL and 
+returns a simple JSON message. Which in this case is Hello World
+
+The second endpoint (@app.get("/items/{item_id}")) takes an item_id 
+from the URL path (must be an integer) and an optional query 
+parameter q, then returns both in the response.
