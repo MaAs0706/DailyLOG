@@ -85,3 +85,9 @@ Think of Pydantic as a bouncer at a club , you define what valid data looks like
 - Deliberately sent wrong data types to trigger Pydantic validation errors
 
 ---
+## 23rd Feb 2026
+
+### Notes
+Didn't get to study today. Picking back up tomorrow.
+
+---
