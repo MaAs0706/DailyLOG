@@ -12,7 +12,20 @@ Start FastAPI to build a foundation for advanced backend and AI work.
 ### What I Did Today
 - Set up this GitHub repo for daily logging
 - Chose FastAPI as the starting point for backend development
+- Setting up the Virtual Environment
+  
+Creating virtual environment 
+```bash
+python3 -m venv .venv
+```
 
+Activating the Virtual Environment
+
+```bash
+
+source .venv/bin/activate
+
+```
 ---
 
 ## 22nd Feb 2026
