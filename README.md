@@ -21,6 +21,8 @@ Start FastAPI to build a foundation for advanced backend and AI work.
 Learn FastAPI fundamentals through the official documentation and a freeCodeCamp course.
 
 ### What I Learned Today
+##### What is FastAPI 
+FastAPI is a basically a high-performance web framework for building API's using Python. It offers speed comparabale to node.js and go . 
 
 #### Basic Endpoint Creation
 
