@@ -106,3 +106,7 @@ Think of Pydantic as a bouncer at a club , you define what valid data looks like
 Didn't get to study today. Picking back up tomorrow.
 
 ---
+## 24th Feb 2026
+https://medium.com/@aswanthmadhav07/virtual-environment-725706aae0bd
+
+Here is a blog on virtual Environment.
