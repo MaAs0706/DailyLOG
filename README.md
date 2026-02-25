@@ -110,3 +110,25 @@ Didn't get to study today. Picking back up tomorrow.
 https://medium.com/@aswanthmadhav07/virtual-environment-725706aae0bd
 
 Here is a blog on virtual Environment.
+---
+
+## 25th Feb 2026
+
+### Goal
+Learn about instances and path parameters
+
+### What I learned Today
+
+#### What is a Class?
+Think of a class as a blueprint. For example, a blueprint for a house defines what a house should have  rooms, doors, windows etc.
+FastAPI is a class ,it's a blueprint that defines everything an API app should be able to do.
+
+#### What is an Instance
+Instance any real object made from the class , like if you make an actual house from the blueprint that would be the instance.
+
+```python
+app = FastAPI()
+
+```
+
+Here FastAPI() creates an actual, real API application from the FastAPI blueprint. That real application is stored in the variable app. So app is the instance.
