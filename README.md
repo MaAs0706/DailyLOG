@@ -133,8 +133,19 @@ app = FastAPI()
 
 Here FastAPI() creates an actual, real API application from the FastAPI blueprint. That real application is stored in the variable app. So app is the instance.
 
-
+---
 ## 26th Feb 2026
 
 ### Goal 
 Learn about path and parameters
+
+### What I learned Today 
+
+"Path" here refers to the last part of the URL starting from the first /.
+
+```
+https://example.com/items/this
+```
+here the path is 
+/items/this
+
