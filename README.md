@@ -115,7 +115,7 @@ Here is a blog on virtual Environment.
 ## 25th Feb 2026
 
 ### Goal
-Learn about instances and path parameters
+Learn about instances 
 
 ### What I learned Today
 
@@ -132,3 +132,9 @@ app = FastAPI()
 ```
 
 Here FastAPI() creates an actual, real API application from the FastAPI blueprint. That real application is stored in the variable app. So app is the instance.
+
+
+## 26th Feb 2026
+
+### Goal 
+Learn about path and parameters
