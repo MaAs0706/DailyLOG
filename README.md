@@ -161,3 +161,16 @@ Didn't Do anything .
 ### Goal 
 Path Parameters
 
+### What I learned Today 
+
+The path is also called the endpoint.
+
+When WE are building API's we normally use different HTTP methods like 
+- Get
+- POST
+- PUT
+- DELETE
+
+and each HTTP method is called an operation . 
+
+
