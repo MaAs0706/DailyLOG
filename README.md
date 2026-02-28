@@ -173,4 +173,23 @@ When WE are building API's we normally use different HTTP methods like
 
 and each HTTP method is called an operation . 
 
+#### Defining a path operation decorator
 
+let us use get operation 
+
+```python
+
+from fastapi import FASTAPI
+
+app = FASTAPI()
+
+@app.get("/")
+def root():
+  return {"message" : "Hello World"}
+
+```
+The @app.get("/") tells FastAPI that the function right below is in charge of handling requests that go to:
+
+- the path /
+
+- using a get operation
