@@ -193,3 +193,15 @@ The @app.get("/") tells FastAPI that the function right below is in charge of ha
 - the path /
 
 - using a get operation
+
+---
+
+## 1st March 2026
+
+## Goal 
+To create a phone database , where you can add , delete , view and update information .
+
+
+### What I learned Today 
+
+I used the GET , POST , UPDATE , DELETE endpoint to create a phone directory , where the storage was in memory , as a dictionary . 
