@@ -219,7 +219,7 @@ app = FastAPI()
 
 records : Dict[int, dict] = {}
 
-next_id = 1
+next_id = 1 
 
 @app.post("/records")
 def create_record(record: PhoneRecord):
@@ -280,3 +280,4 @@ class UpdatePhoneRecord(BaseModel):
     email : str | None = None    
 
 ```
+We declared the next_id as a global variable and then we were accessing that and updating that when we were adding any new data .
