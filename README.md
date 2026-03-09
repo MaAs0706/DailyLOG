@@ -280,7 +280,9 @@ class UpdatePhoneRecord(BaseModel):
     email : str | None = None    
 
 ```
+
 We declared the next_id as a global variable and then we were accessing that and updating that when we were adding any new data .
+
 ---
 
 ## 9th March 2026
