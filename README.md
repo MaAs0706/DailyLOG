@@ -281,3 +281,8 @@ class UpdatePhoneRecord(BaseModel):
 
 ```
 We declared the next_id as a global variable and then we were accessing that and updating that when we were adding any new data .
+---
+
+## 9th March 2026
+
+Me and my team are getting for FossHack which will last till 31st march .
